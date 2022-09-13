@@ -1,0 +1,21 @@
+<div class="container">
+  <div>
+    <table>
+      <tr>
+        <th>Sr.No.</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Status</th>
+      </tr>
+      <tr *ngFor="let item of products; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }}</td>
+        <td>
+          <button class="btn btn-primary" type="submit">Edit</button>
+          <button class="btn btn-danger" type="submit">Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

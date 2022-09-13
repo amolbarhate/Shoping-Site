@@ -1,0 +1,14 @@
+<h1>clothing</h1>
+<div class="container">
+    <div class="ms-3 mt-5 d-inline-flex" *ngFor="let item of filterdata">
+      <div class="card" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="image here" />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">Price - {{ item.price }}</p>
+          <p class="card-text">Available Quantity - {{ item.quantity }}</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
